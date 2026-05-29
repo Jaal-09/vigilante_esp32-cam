@@ -28,9 +28,8 @@ El código fuente se encuentra estructurado de forma limpia dentro de la carpeta
 ## 📋 Requisitos de Hardware
 
 1.  Módulo **ESP32-CAM** (Ai-Thinker).
-2.  Sensor de movimiento **PIR HC-SR501** (o similar).
-3.  Convertidor FTDI (USB a Serial) para la programación.
-4.  Cables de conexión y fuente de alimentación externa de **5V / 2A** (Crucial para el destello del sensor de cámara y envío WiFi).
+2.  Convertidor FTDI (USB a Serial) para la programación.
+
 
 
 
@@ -41,7 +40,9 @@ El código fuente se encuentra estructurado de forma limpia dentro de la carpeta
 git clone [https://github.com/TU_USUARIO/esp32cam-telegram-security.git](https://github.com/TU_USUARIO/esp32cam-telegram-security.git)
 cd esp32cam-telegram-security
 
-2. Configurar las credenciales
+```
+
+## 2. Configurar las credenciales
 
 const char* WIFI_SSID = "Tu_Nombre_De_Red";
 const char* WIFI_PASS = "Tu_Contraseña";
@@ -50,7 +51,7 @@ const char* WIFI_PASS = "Tu_Contraseña";
 const char* TELEGRAM_TOKEN = "1234567890:ABCdefGhIJKlmNoPQRsTUVwxyZ"; 
 const char* TELEGRAM_CHAT_ID = "123456789";
 
-🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 Lenguaje: C++ 
 
 Entorno de Desarrollo: VS Code + PlatformIO
@@ -59,4 +60,4 @@ Framework: Arduino Core para ESP32
 
 Protocolos: HTTPS, TCP/IP, HTTP Multipart Form Data
 
-✒️ Desarrollado por: [Jesús Arias / Estudiante de Ingeniería Mecatrónica] - Universidad de Pamplona.
+## ✒️ Desarrollado por: [Jesús Arias / Estudiante de Ingeniería Mecatrónica] - Universidad de Pamplona.
