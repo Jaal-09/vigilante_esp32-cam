@@ -13,13 +13,13 @@ const char* TELEGRAM_CHAT_ID = "ID_telegram";
 
 const int PIN_SENSOR_MOVIMIENTO = 13; // Pin del sensor PIR
 
-// Instanciamos nuestros objetos globales (Estructura POO Limpia)
+// Instanciamos nuestros objetos globales
 WifiManager wifi(WIFI_SSID, WIFI_PASS);
 CamaraManager camara;
-TelegramManager telegram(TELEGRAM_TOKEN, TELEGRAM_CHAT_ID); // <--- NUEVO
+TelegramManager telegram(TELEGRAM_TOKEN, TELEGRAM_CHAT_ID);
 
 unsigned long tiempoUltimaAlerta = 0;
-const unsigned long ESPERA_ENTRE_ALERTAS = 20000; // 20 segundos de respiro
+const unsigned long ESPERA_ENTRE_ALERTAS = 20000;
 
 void setup() {
     Serial.begin(115200);
@@ -58,7 +58,6 @@ void loop() {
             // 2. Definir el mensaje de texto que acompaña la foto
             String mensaje = "⚠️ ¡ALERTA DE INTRUSIÓN! Se ha detectado movimiento en la zona de vigilancia. Adjuntando captura de pantalla en tiempo real.";
             
-            // 3. Llamar al método estrella: Pasa el texto y el PUNTERO de la foto
             // Telegram subirá los bytes directos.
             telegram.enviarAlertaConFoto(mensaje, foto);
             
