@@ -44,12 +44,17 @@ cd esp32cam-telegram-security
 
 ## 2. Configurar las credenciales
 
+```bash
+
 const char* WIFI_SSID = "Tu_Nombre_De_Red";
 const char* WIFI_PASS = "Tu_Contraseña";
 
 // Credenciales obtenidas vía @BotFather y @myidbot en Telegram
 const char* TELEGRAM_TOKEN = "1234567890:ABCdefGhIJKlmNoPQRsTUVwxyZ"; 
 const char* TELEGRAM_CHAT_ID = "123456789";
+
+```
+
 
 ## 🛠️ Tecnologías Utilizadas
 Lenguaje: C++ 
